@@ -1,5 +1,2 @@
 streamlit
 requests
-json
-dotenv
-os
