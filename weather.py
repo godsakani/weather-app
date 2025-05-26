@@ -74,7 +74,6 @@ with col2:
                 container.markdown(f"<span style='font-size:18px;'>Wind Speed: {wind_speed} m/s.</span>", unsafe_allow_html=True)
                 container.write(f"Weather Condition: {condition}.")
                 if curr_temp_celsius > 25 and city_humidity > 70:
-                    st.balloons()
                     st.error(f"It's a hot and dry day in the city of {city}!")
                 elif curr_temp_celsius >= 15 and curr_temp_celsius <= 25 and city_humidity <= 70: 
                     st.success(f"The weather in {city} is pleasant today.")
