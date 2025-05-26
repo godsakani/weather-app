@@ -75,15 +75,12 @@ with col2:
                 container.write(f"Weather Condition: {condition}.")
                 if curr_temp_celsius > 25 and city_humidity > 70:
                     st.balloons()
-                    st.success(f"It's a hot and dry day in the city of {city}!")
-                elif curr_temp_celsius >= 15 and curr_temp_celsius <= 25 and city_humidity <= 70:
-                    st.balloons()   
+                    st.error(f"It's a hot and dry day in the city of {city}!")
+                elif curr_temp_celsius >= 15 and curr_temp_celsius <= 25 and city_humidity <= 70: 
                     st.success(f"The weather in {city} is pleasant today.")
                 elif curr_temp_celsius < 15 and city_humidity > 70:
-                    st.balloons()
                     st.warning(f"The weather in {city} is chilly today.")
                 else:
-                    st.balloons()
                     st.warning(f"The weather in {city} is cold and humid today and we might experience {condition}.")
         else:
             st.warning("Please enter both city name and country code.")
